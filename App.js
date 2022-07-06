@@ -1,25 +1,13 @@
-
-import { NavigationContainer } from "@react-navigation/native";
-import DrawerNavigator from "./src/navigations/DrawerNavigator";
-
-import React, { useEffect } from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
-
-
-
-
-const AppStack = createStackNavigator();
+import { View, Text } from 'react-native'
+import React from 'react'
+import Home from './src/screens/Home'
 
 const App = () => {
-  
-    return (
-     <NavigationContainer>      
-        <DrawerNavigator />
-        </NavigationContainer>
+  return (
+    <View>
+    <Home/>
+    </View>
+  )
+}
 
-    )
-  }
-
-
-export default App
-
+export default App;
